@@ -33,7 +33,7 @@
         "lodash": "4.17.21",
         "react-native-keep-awake": "4.0.0",
         "react-native-svg": "9.13.6",
-        "react-native-svg-transformer": "0.14.3",
+        "react-native-svg-transformer": "0.20.0",
         "url": "0.11.0"
     }
 }
