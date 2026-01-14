@@ -9,7 +9,7 @@ RUN \
     npm run build:prod && \
     echo "{ \"spotClientVersion\": \"${SPOT_CLIENT_VERSION}\" }" > dist/spot-client-version.json
 
-FROM nginx
+FROM nginx:1.29.4-trixie
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 COPY index.html /usr/share/nginx/html
 COPY --from=builder /build/dist /usr/share/nginx/html/dist
